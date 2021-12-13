@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  
+    <h1>Calculator</h1>
+        
+    <div class="contenedor">
+        <div class="l">
+            <label id="lv1" for="valor1">Enter a number:</label>
+            <input type="number" placeholder="Number 1" min="0" id="valor1" class="inputs reference" >
+            <input type="hidden"  id="statusBox" value="0">
+            </br>
+            <label for="valor2">Enter a number:</label>
+            <input type="number" placeholder="Number 2" min="0" id="valor2" class="inputs">
+        </div>
+        <div class="operadores">
+            <label for="operators">Select operation:</label>
+            <select name="operators" id="operators">
+                <option value="suma">Addition</option>
+                <option value="resta">Subtraction</option>
+                <option value="multiplicación">Multiplication</option>
+                <option value="división">Division</option>
+            </select>
+        </div>
+        </br>
+        <div>
+            <input class="btn-num" type="button" value="1" id="a">
+            <input class="btn-num" type="button" value="2" id="b">
+            <input class="btn-num" type="button" value="3" id="c">
+            </br>
+            <input class="btn-num" type="button" value="4" id="d">
+            <input class="btn-num" type="button" value="5" id="e">
+            <input class="btn-num" type="button" value="6" id="f">
+            </br>
+            <input class="btn-num" type="button" value="7" id="g">
+            <input class="btn-num" type="button" value="8" id="h">
+            <input class="btn-num" type="button" value="9" id="i">
+            </br>
+            <input type="button" class="clear" value="Clear" id="clear">
+            <input class="btn-num" type="button" value="0" id="j">
+            <input type="button" class="enter" value="Enter" id="enter">
+            </br>
+            <input type="button" value="Calculate" id="calculate" class="calculate">
+    
+        </div>
+    </div>
+        
+    <script src="Funciones.js"></script>
+</body>
+</html>
